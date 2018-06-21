@@ -22,8 +22,12 @@
     [self setTableViewHeaderView];
 }
 - (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
     self.navigationController.navigationBar.alpha = 0;
+    [super viewWillAppear:animated];
+}
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
 }
 - (void)initialized {
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -60,19 +64,29 @@
 }
 #pragma mark - ScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (scrollView.contentOffset.y > 100) {
+    if (scrollView.contentOffset.y >= 100 && scrollView.contentOffset.y <= 200) {
+//        [self.navigationController setNavigationBarHidden:false];
         CGFloat offset = scrollView.contentOffset.y;
         CGFloat destinateOffset = 200;
-        CGFloat v = offset / destinateOffset;
+        CGFloat v = (offset-100) / (destinateOffset-100);
+        NSLog(@"%f-%f", self.navigationController.navigationBar.layer.opacity, v);
         CABasicAnimation *basicAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
         basicAnimation.fromValue = @(self.navigationController.navigationBar.layer.opacity);
         basicAnimation.toValue = @(v);
         basicAnimation.removedOnCompletion = false;
-//        basicAnimation.additive = true;
+        basicAnimation.duration = 0.25;
+        basicAnimation.fillMode = kCAFillModeForwards;
         [self.navigationController.navigationBar.layer addAnimation:basicAnimation forKey:@"opacity"];
-//        self.navigationController.navigationBar.alpha = 1;
-    } else {
-       self.navigationController.navigationBar.alpha = 0;
+        self.navigationController.navigationBar.layer.opacity = v;
+    } else if (scrollView.contentOffset.y <= 100) {
+        self.navigationController.navigationBar.alpha = 0;
+    }
+//    NSLog(@"执行了");
+}
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    if (scrollView.contentOffset.y <= 100) {
+        self.navigationController.navigationBar.alpha = 0;
+//        [self.navigationController setNavigationBarHidden:true];
     }
 }
 - (void)didReceiveMemoryWarning {
