@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A4709D720F45B87009CD64F /* YHScrollViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4709D620F45B87009CD64F /* YHScrollViewManager.m */; };
-		4A4709DD20F45F0C009CD64F /* YHAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4709DC20F45F0C009CD64F /* YHAnimationManager.m */; };
-		4A4709E020F45F31009CD64F /* YHScrollViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4709DF20F45F31009CD64F /* YHScrollViewDelegate.m */; };
-		4A4709E320F46459009CD64F /* UIView+YHParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4709E220F46459009CD64F /* UIView+YHParentViewController.m */; };
+		4A4709E620F49CBE009CD64F /* YHNavigationBarAnimation in Resources */ = {isa = PBXBuildFile; fileRef = 4A4709E520F49CBE009CD64F /* YHNavigationBarAnimation */; };
 		FB32568120DBA728009F9FC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32568020DBA728009F9FC7 /* AppDelegate.m */; };
 		FB32568420DBA728009F9FC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32568320DBA728009F9FC7 /* ViewController.m */; };
 		FB32568720DBA728009F9FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB32568520DBA728009F9FC7 /* Main.storyboard */; };
@@ -39,15 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A4709D520F45B87009CD64F /* YHScrollViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHScrollViewManager.h; sourceTree = "<group>"; };
-		4A4709D620F45B87009CD64F /* YHScrollViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHScrollViewManager.m; sourceTree = "<group>"; };
-		4A4709DB20F45F0C009CD64F /* YHAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHAnimationManager.h; sourceTree = "<group>"; };
-		4A4709DC20F45F0C009CD64F /* YHAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHAnimationManager.m; sourceTree = "<group>"; };
-		4A4709DE20F45F31009CD64F /* YHScrollViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHScrollViewDelegate.h; sourceTree = "<group>"; };
-		4A4709DF20F45F31009CD64F /* YHScrollViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHScrollViewDelegate.m; sourceTree = "<group>"; };
-		4A4709E120F46459009CD64F /* UIView+YHParentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YHParentViewController.h"; sourceTree = "<group>"; };
-		4A4709E220F46459009CD64F /* UIView+YHParentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YHParentViewController.m"; sourceTree = "<group>"; };
 		4A4709E420F4860B009CD64F /* YHDistanceRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDistanceRange.h; sourceTree = "<group>"; };
+		4A4709E520F49CBE009CD64F /* YHNavigationBarAnimation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = YHNavigationBarAnimation; sourceTree = "<group>"; };
 		FB32567C20DBA728009F9FC7 /* YHNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB32567F20DBA728009F9FC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB32568020DBA728009F9FC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,18 +104,11 @@
 		FB32567E20DBA728009F9FC7 /* YHNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				4A4709E520F49CBE009CD64F /* YHNavigationBarAnimation */,
 				FB32567F20DBA728009F9FC7 /* AppDelegate.h */,
 				FB32568020DBA728009F9FC7 /* AppDelegate.m */,
 				FB32568220DBA728009F9FC7 /* ViewController.h */,
 				FB32568320DBA728009F9FC7 /* ViewController.m */,
-				4A4709D520F45B87009CD64F /* YHScrollViewManager.h */,
-				4A4709D620F45B87009CD64F /* YHScrollViewManager.m */,
-				4A4709DE20F45F31009CD64F /* YHScrollViewDelegate.h */,
-				4A4709DF20F45F31009CD64F /* YHScrollViewDelegate.m */,
-				4A4709DB20F45F0C009CD64F /* YHAnimationManager.h */,
-				4A4709DC20F45F0C009CD64F /* YHAnimationManager.m */,
-				4A4709E120F46459009CD64F /* UIView+YHParentViewController.h */,
-				4A4709E220F46459009CD64F /* UIView+YHParentViewController.m */,
 				4A4709E420F4860B009CD64F /* YHDistanceRange.h */,
 				FB32568520DBA728009F9FC7 /* Main.storyboard */,
 				FB32568820DBA72B009F9FC7 /* Assets.xcassets */,
@@ -259,6 +242,7 @@
 			files = (
 				FB32568C20DBA72B009F9FC7 /* LaunchScreen.storyboard in Resources */,
 				FB32568920DBA72B009F9FC7 /* Assets.xcassets in Resources */,
+				4A4709E620F49CBE009CD64F /* YHNavigationBarAnimation in Resources */,
 				FB32568720DBA728009F9FC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,13 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A4709E320F46459009CD64F /* UIView+YHParentViewController.m in Sources */,
-				4A4709DD20F45F0C009CD64F /* YHAnimationManager.m in Sources */,
 				FB32568420DBA728009F9FC7 /* ViewController.m in Sources */,
 				FB32568F20DBA72B009F9FC7 /* main.m in Sources */,
-				4A4709D720F45B87009CD64F /* YHScrollViewManager.m in Sources */,
 				FB32568120DBA728009F9FC7 /* AppDelegate.m in Sources */,
-				4A4709E020F45F31009CD64F /* YHScrollViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
