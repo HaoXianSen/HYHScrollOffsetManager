@@ -36,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A4709E420F4860B009CD64F /* YHDistanceRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDistanceRange.h; sourceTree = "<group>"; };
 		4A4709E520F49CBE009CD64F /* YHNavigationBarAnimation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = YHNavigationBarAnimation; sourceTree = "<group>"; };
 		FB32567C20DBA728009F9FC7 /* YHNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB32567F20DBA728009F9FC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,7 +108,6 @@
 				FB32568020DBA728009F9FC7 /* AppDelegate.m */,
 				FB32568220DBA728009F9FC7 /* ViewController.h */,
 				FB32568320DBA728009F9FC7 /* ViewController.m */,
-				4A4709E420F4860B009CD64F /* YHDistanceRange.h */,
 				FB32568520DBA728009F9FC7 /* Main.storyboard */,
 				FB32568820DBA72B009F9FC7 /* Assets.xcassets */,
 				FB32568A20DBA72B009F9FC7 /* LaunchScreen.storyboard */,
