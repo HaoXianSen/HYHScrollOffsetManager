@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HYHScrollOffsetManager'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HYHScrollOffsetManager.'
+  s.summary          = 'Simply construct do something with scroll view offset'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+According to the scroll view offset do something, like change navigation bar alpha. I wrapped a change navigation bar alpha animation, you can make custom animation or do something by yourself.
                        DESC
 
-  s.homepage         = 'https://github.com/1335430614@qq.com/HYHScrollOffsetManager'
+  s.homepage         = 'https://github.com/HaoXianSen/HYHScrollOffsetManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '1335430614@qq.com' => 'haoyuhong@dangdang.com' }
-  s.source           = { :git => 'https://github.com/1335430614@qq.com/HYHScrollOffsetManager.git', :tag => s.version.to_s }
+  s.author           = { 'Harry' }
+  s.source           = { :git => 'https://github.com/HaoXianSen/HYHScrollOffsetManager', :tag => s.version.to_s}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

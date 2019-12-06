@@ -19,13 +19,12 @@ typedef void(^HYHCustomAnimationBlock)(CGPoint offset, HYHAnimateDistanceRange r
 
 @interface HYHScrollViewManager : NSObject
 
-/**管理者srcollView**/
 @property (nonatomic, weak) UIScrollView *scrollView;
-@property (nonatomic, weak) UINavigationController *currentNav;
 @property (nonatomic, assign) HYHAnimateDistanceRange animateRange;
 
 @property (nonatomic, assign) HYHScrollOffsetAnimationType animationType;
 @property (nonatomic, copy) HYHCustomAnimationBlock customAnimationBlock;
+
 /**
  初始化srcollView管理者
 
@@ -41,7 +40,5 @@ typedef void(^HYHCustomAnimationBlock)(CGPoint offset, HYHAnimateDistanceRange r
  @return 实例变量
  */
 + (instancetype)scrollViewManager:(UIScrollView *)srcollView;
-
-- (void)setNavigationBarHidden:(BOOL)isHidden animated:(BOOL)animated;
 
 @end

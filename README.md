@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/HYHScrollOffsetManager.svg?style=flat)](https://cocoapods.org/pods/HYHScrollOffsetManager)
 [![Platform](https://img.shields.io/cocoapods/p/HYHScrollOffsetManager.svg?style=flat)](https://cocoapods.org/pods/HYHScrollOffsetManager)
 
-According to the scroll view offset do something, like change navigation bar alpha. I wrapped a change navigation bar alpha animation, you can make custom animation or do something by yourself.
+According to the scroll view offset do something, like change navigation bar alpha. I wrapped a change navigation bar alpha animation, you can make custom animation or do something by yourself. Simply construct a handle by scroll offset. 
 
 ## Example
 
@@ -24,9 +24,27 @@ it, simply add the following line to your Podfile:
 pod 'HYHScrollOffsetManager'
 ```
 
+## Example
+``` ruby
+@property (nonatomic, strong) HYHScrollViewManager *scrollViewManager;
+/// 应用默认的navigation bar 处理动画
+_scrollViewManager = [HYHScrollViewManager scrollViewManager:_tableView];
+_scrollViewManager.animateRange = HYHAnimateDistanceRangeMake(100, 90, 0.25);
+
+/// 应用自己处理
+
+_scrollViewManager = [HYHScrollViewManager scrollViewManager:_tableView];
+_scrollViewManager.animateRange = HYHAnimateDistanceRangeMake(100, 90, 0.25);
+_scrollViewManager.animationType = HYHScrollOffsetAnimationTypeCustom;
+_scrollViewManager.customAnimationBlock = ^(CGPoint offset, HYHAnimateDistanceRange range) {
+  // handle logic by offset
+};
+
+```
+
 ## Author
 
-1335430614@qq.com
+I'm harry, and a iOSer. You can send me  QQ email ([1335430614@qq.com]), or has issues in Issues module.
 
 ## License
 

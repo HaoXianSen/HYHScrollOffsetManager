@@ -43,6 +43,10 @@
     
     _scrollViewManager = [HYHScrollViewManager scrollViewManager:_tableView];
     _scrollViewManager.animateRange = HYHAnimateDistanceRangeMake(100, 90, 0.25);
+//    _scrollViewManager.animationType = HYHScrollOffsetAnimationTypeCustom;
+//    _scrollViewManager.customAnimationBlock = ^(CGPoint offset, HYHAnimateDistanceRange range) {
+//      // handle logic by offset
+//    };
 }
 
 - (void)setTableViewHeaderView {

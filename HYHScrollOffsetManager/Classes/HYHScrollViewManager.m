@@ -13,7 +13,7 @@
 @interface HYHScrollViewManager()
 
 @property (nonatomic, strong) HYHScrollViewObserver *scrollViewOffsetObserver;
-
+@property (nonatomic, weak) UINavigationController *currentNav;
 @property (nonatomic, strong) HYHAnimationManager *animationManager;
 @property (nonatomic, assign) CGFloat lastAlpha;
 @end
