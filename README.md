@@ -5,11 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/HYHScrollOffsetManager.svg?style=flat)](https://cocoapods.org/pods/HYHScrollOffsetManager)
 [![Platform](https://img.shields.io/cocoapods/p/HYHScrollOffsetManager.svg?style=flat)](https://cocoapods.org/pods/HYHScrollOffsetManager)
 
+According to the scroll view offset do something, like change navigation bar alpha. I wrapped a change navigation bar alpha animation, you can make custom animation or do something by yourself.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+iOS 8.0 later
 
 ## Installation
 
@@ -22,7 +26,7 @@ pod 'HYHScrollOffsetManager'
 
 ## Author
 
-1335430614@qq.com, haoyuhong@dangdang.com
+1335430614@qq.com
 
 ## License
 
