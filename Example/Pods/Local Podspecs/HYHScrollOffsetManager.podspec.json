@@ -1,18 +1,16 @@
 {
   "name": "HYHScrollOffsetManager",
   "version": "0.1.0",
-  "summary": "A short description of HYHScrollOffsetManager.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/1335430614@qq.com/HYHScrollOffsetManager",
+  "summary": "Simply construct do something with scroll view offset",
+  "description": "According to the scroll view offset do something, like change navigation bar alpha. I wrapped a change navigation bar alpha animation, you can make custom animation or do something by yourself.",
+  "homepage": "https://github.com/HaoXianSen/HYHScrollOffsetManager",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
-  "authors": {
-    "1335430614@qq.com": "haoyuhong@dangdang.com"
-  },
+  "authors": "Harry",
   "source": {
-    "git": "https://github.com/1335430614@qq.com/HYHScrollOffsetManager.git",
+    "git": "https://github.com/HaoXianSen/HYHScrollOffsetManager",
     "tag": "0.1.0"
   },
   "platforms": {

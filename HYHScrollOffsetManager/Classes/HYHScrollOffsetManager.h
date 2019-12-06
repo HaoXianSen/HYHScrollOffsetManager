@@ -17,7 +17,7 @@ typedef NS_ENUM(NSUInteger, HYHScrollOffsetAnimationType) {
 
 typedef void(^HYHCustomAnimationBlock)(CGPoint offset, HYHAnimateDistanceRange range);
 
-@interface HYHScrollViewManager : NSObject
+@interface HYHScrollOffsetManager : NSObject
 
 @property (nonatomic, weak) UIScrollView *scrollView;
 @property (nonatomic, assign) HYHAnimateDistanceRange animateRange;
@@ -39,6 +39,6 @@ typedef void(^HYHCustomAnimationBlock)(CGPoint offset, HYHAnimateDistanceRange r
  @param srcollView 需要管理的srcollView
  @return 实例变量
  */
-+ (instancetype)scrollViewManager:(UIScrollView *)srcollView;
++ (instancetype)scrollOffsetManager:(UIScrollView *)srcollView;
 
 @end

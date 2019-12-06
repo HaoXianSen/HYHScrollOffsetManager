@@ -10,11 +10,11 @@
 #endif
 #endif
 
-#import "UIView+HYHParentViewController.h"
 #import "HYHAnimationManager.h"
 #import "HYHDistanceRange.h"
-#import "HYHScrollViewManager.h"
+#import "HYHScrollOffsetManager.h"
 #import "HYHScrollViewObserver.h"
+#import "UIView+HYHParentViewController.h"
 
 FOUNDATION_EXPORT double HYHScrollOffsetManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char HYHScrollOffsetManagerVersionString[];

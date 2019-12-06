@@ -7,13 +7,13 @@
 //
 
 #import "HYHViewController.h"
-#import <HYHScrollOffsetManager/HYHScrollViewManager.h>
+#import <HYHScrollOffsetManager/HYHScrollOffsetManager.h>
 
 @interface HYHViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, weak)UITableView *tableView;
 
-@property (nonatomic, strong) HYHScrollViewManager *scrollViewManager;
+@property (nonatomic, strong) HYHScrollOffsetManager *scrollViewManager;
 
 @end
 
@@ -41,7 +41,7 @@
     [self.view addSubview:tableView];
     _tableView = tableView;
     
-    _scrollViewManager = [HYHScrollViewManager scrollViewManager:_tableView];
+    _scrollViewManager = [HYHScrollOffsetManager scrollOffsetManager:_tableView];
     _scrollViewManager.animateRange = HYHAnimateDistanceRangeMake(100, 90, 0.25);
 //    _scrollViewManager.animationType = HYHScrollOffsetAnimationTypeCustom;
 //    _scrollViewManager.customAnimationBlock = ^(CGPoint offset, HYHAnimateDistanceRange range) {

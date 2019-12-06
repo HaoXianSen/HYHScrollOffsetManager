@@ -10,6 +10,7 @@
 		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ECBDEBB75F33FC9F770B51165F5CAA4 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		010EC6B555F00AC990C46D4E4019B4EB /* KWProbePoller.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9653A8965D348ED67E548617FD1F6E /* KWProbePoller.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0126ED337580101E28E8A26ED4F44674 /* KWGenericMatchingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B4DE630F90EFCF285C91163AB829FA /* KWGenericMatchingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0165A8B70C285812AFB0409A195A3A76 /* HYHScrollOffsetManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2195CCCA4A9D8E434A89F57372CED76C /* HYHScrollOffsetManager-dummy.m */; };
 		021B9C94F6EBD5074380FC2C7B8A5CC4 /* KWExampleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E6BEF7049D8595B21C7459827567D7 /* KWExampleNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0402D44147B3DEA1BAFC4EF91577D3FF /* KWItNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D5130349A45B851F32213B6356FE059C /* KWItNode.m */; };
 		05F3A6432D6AD96A9BC357C0DBC5F512 /* KWSymbolicator.h in Headers */ = {isa = PBXBuildFile; fileRef = CE3D98CE95008EAD6AA7555C1DD0B0C9 /* KWSymbolicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,11 +19,10 @@
 		0A3AD1AD88F6A611F70FC084722B21C4 /* KWMessageTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 781FFACC1E7EA8C46078B3941124CE8C /* KWMessageTracker.m */; };
 		0A8954F8CF85C7F699C04C73E91A5B38 /* KWSharedExample.m in Sources */ = {isa = PBXBuildFile; fileRef = DD086EA5330F9948188205B7FE681F9B /* KWSharedExample.m */; };
 		0BB33445FD5FB877ED9EF29C70A95EF4 /* NSProxy+KiwiVerifierAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F944C8F99F7742929C6DA55F4A539DAD /* NSProxy+KiwiVerifierAdditions.m */; };
-		0CF107163C3CD2A8B87CDBCF0E843813 /* UIView+HYHParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F01BDE60306C1842F3BDE8E449C0C /* UIView+HYHParentViewController.m */; };
-		0F858E812679B6C65550C70E9B4ED482 /* HYHAnimationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9421EB8745917BA98CE3A8CDA2FC7E9A /* HYHAnimationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F89BD3F84DB7DE7B7692F385C295531 /* NSObject+KiwiStubAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4609B5920D4F6CEF9566C68A6CB00256 /* NSObject+KiwiStubAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AE96546BFBC2D4844FAB51CA83EFA3 /* UIApplication+StrictKeyWindow.m */; };
 		135EA78DF787D2987A359A3436AAA38B /* KWAfterEachNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FAC6F06B2FE70980CA83657DD3801D /* KWAfterEachNode.m */; };
+		138533881022EB3E25E22923DA730458 /* HYHScrollOffsetManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F38BBC68D9C5AABD8627DC33C0AD4E8F /* HYHScrollOffsetManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		140C4A4674B8E0142EA1BE39DCE9C101 /* KWNotificationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CCD203EFDA3D829174D14FE245F84F /* KWNotificationMatcher.m */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D50BFB20B83BEBFF89DEE2620421FF /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
@@ -69,15 +69,14 @@
 		414243899C81B333165CB466A2E73821 /* KWIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A55717C655FF37712E11905CBB9D7B5 /* KWIntercept.m */; };
 		43D2FD32F4C2329586ED7334C4C1ED1F /* NSObject+KiwiSpyAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 164649229850F95B726BEE9C794E56DF /* NSObject+KiwiSpyAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		474964AA92753899777639AB723366B4 /* KWMessagePattern.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C2EB907EF949A1B252DA1A6FBE87E /* KWMessagePattern.m */; };
-		4AAD90EB900833B886733D0D55A3F267 /* HYHScrollOffsetManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F52DE16B6BBF9B4E3F24C2FC612B1 /* HYHScrollOffsetManager-dummy.m */; };
 		4B64055584AB1F88524BD84012CFD965 /* NSInvocation+KiwiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D8AC8AE259DBCCDBB4C474A6801463 /* NSInvocation+KiwiAdditions.m */; };
-		4BC50A9E70EBDADFBA1ADF54FD2875B0 /* HYHScrollViewObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = C2124A2B79BDD0F31CDD64F8E4DD63E5 /* HYHScrollViewObserver.m */; };
 		4BD42FEB504CFF4EDCACAA6A90F2296B /* NSProxy+KiwiVerifierAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E129ED522076241A5A1084DA9E265C /* NSProxy+KiwiVerifierAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D4DAA92870FEEBDB9DA3E047C0DD239 /* KWMatcherFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A717A4CF3910591D0E2CCB15CE26E79 /* KWMatcherFactory.m */; };
 		4D6375C59CBCA243A9826C6773FCDC82 /* KWBeBetweenMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 90386839174A278D90A478CCB2259933 /* KWBeBetweenMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50421FA8B8D6FC0784354E6A21DD040C /* KWEqualMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A08374BF7455938F755FCC431FC3B9E /* KWEqualMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52F5AFEBD9637164EBF1087C93B5181E /* KWMessageSpying.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC260C3E535294D004D4D3CD56A11B0 /* KWMessageSpying.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57A7717712B5C39EDAAAF3BD849705D4 /* KWBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 48297828E25636FEB112EF215B4A0088 /* KWBlockNode.m */; };
+		57DE7ED7464A8663C1B10472EA23512B /* UIView+HYHParentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C164EAE2A60D45158B33DB937271F4 /* UIView+HYHParentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		581845A1F686A720235F16F6917B7089 /* KWBeSubclassOfClassMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 949DC0F46DB93E0C0B55CDAA95C01F9B /* KWBeSubclassOfClassMatcher.m */; };
 		5971948A685E206168F8D78483F52F18 /* KiwiMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = B21399812CB105C99BDFE56C74AED9BC /* KiwiMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5971C7965ABECFD046D4121ACEA0C3EF /* KWStringUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C180D4D02238C7873537B47C396B832 /* KWStringUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -86,9 +85,9 @@
 		5BCE6A3C3798DC89B07C3CD4CAC8CD97 /* KWNull.h in Headers */ = {isa = PBXBuildFile; fileRef = D514FF1A2F5C61A0E1AC879D6D9E6BA9 /* KWNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BFF4F31AD167C8256DF656382E89012 /* KWGenericMatchEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D60196C3FA1E655FD2CB1EDC8CE79D6 /* KWGenericMatchEvaluator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C6C99F70342BB36C5793E7C2B458C64 /* KWContainStringMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E04245CA6412C9DC56B7BBA88954700 /* KWContainStringMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D8B8CEC78F4DBBE5D93735D7F60B108 /* HYHScrollViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE61113834F102829042A3E5C77FB02 /* HYHScrollViewManager.m */; };
 		5F9A6B1F251E54709B343621609655C6 /* KWReporting.h in Headers */ = {isa = PBXBuildFile; fileRef = 643F29B82CA8BFD1B73DAEC2CD38D476 /* KWReporting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		604D3F76D9400BDEFBC6587EE6827933 /* KWBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AEE090DFECDBC72B6830E7AB920EA1 /* KWBlock.m */; };
+		60797CD5AC988B0D4F8C44FFF1B894B8 /* HYHScrollOffsetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C48E2D6CB7F41851E907012B7A032226 /* HYHScrollOffsetManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		634278532B85AB8514393C79C0F332B6 /* KWSymbolicator.m in Sources */ = {isa = PBXBuildFile; fileRef = EE163E2B62465541714877C7392DE4AC /* KWSymbolicator.m */; };
 		634876E37E67D3C424AD37CE4C7F516D /* KWVerifying.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FA33FED0A370B9666BD8D3311727E39 /* KWVerifying.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63EA00AA88B1C1E1522DE59D30EF3F88 /* KWAfterAllNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C5168705C56B8E2F44C9A8C13460F6 /* KWAfterAllNode.m */; };
@@ -111,8 +110,8 @@
 		716BF643B9E590E9EDC71DCD0477CD09 /* KWSharedExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 034C1BE3AC5E1BA154CB865CD7E9A55F /* KWSharedExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72EE785E78F6BBCFB8DE91CE18804624 /* KWCountType.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E20959BCA69567D8B6010F5D63992A0 /* KWCountType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73258C154A2B1CF97BC0BAB685705899 /* KWStringContainsMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9417E545A839EDED49AA267D883027D4 /* KWStringContainsMatcher.m */; };
-		73672D9A1C319D917B5CE0CE4AD79477 /* HYHScrollViewObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = D62B61238B3EF0F1F20F95672482810D /* HYHScrollViewObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73FB3C41ABF9FFD350B7A8658482F7C7 /* KWAsyncVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 786226E7C76F2537401DA7776FB17E99 /* KWAsyncVerifier.m */; };
+		7476C7A9CD57F12C37239C2901B21D5D /* UIView+HYHParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 990B8C87A81BBFDD825682AD907BC239 /* UIView+HYHParentViewController.m */; };
 		75BEDE54BF96BF5148558E48D545F14D /* KWLet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC91C1C42D92C8AA18A23D4ADD95CB9 /* KWLet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7624F1D59A0863C620767DEF22A57A99 /* KWNotificationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CAA68F33A9D45BF7AD5DE66C6C62343 /* KWNotificationMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		799257E82809153DBE82AF57853D8F05 /* KWWorkarounds.h in Headers */ = {isa = PBXBuildFile; fileRef = B656D420615385E6BC1922A1C5A94107 /* KWWorkarounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -124,16 +123,17 @@
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5246595DB08521A2B86188BD97D54437 /* FBSnapshotTestController.m */; };
 		8A257B2F83D8881164C8B479398CC720 /* KWExampleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 69A24AC678F1785191B3700651071EA0 /* KWExampleDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8AF38478B686878D7179B8D73E7DCBF7 /* KWAny.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B44B2E3B6CEA73FFC379E7C87DE996 /* KWAny.m */; };
-		8B7F734609198BE0630C3126545AAFEE /* HYHDistanceRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E32C230DACAB30D350455C256F4EA1 /* HYHDistanceRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BF027B676130A01572134A15F8AAD21 /* KWStringPrefixMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = CE48E476D83903412BDB850186645789 /* KWStringPrefixMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C11D687BD5E286E9F76D1F726A7FC20 /* KWNull.m in Sources */ = {isa = PBXBuildFile; fileRef = F78C1205EAEC92F3613B46069C517375 /* KWNull.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F9559DE8B3F0F541D286AE0FA53E13 /* FBSnapshotTestCase.m */; };
+		8CECB222000ACC8E9B6ED3E04D32D157 /* HYHScrollViewObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DF48F45B22642E49E2E242410E625A0F /* HYHScrollViewObserver.m */; };
 		8D04DD37703C899A71CE8D9A05727B7B /* Kiwi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 063067AF0FF4B7405E641A8BDE2B21A3 /* Kiwi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E6C4D032491E68AEEF5846F86A3BE45 /* KWInequalityMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 3160CE771A2F1969A42EE57D5E0BAA72 /* KWInequalityMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9388F5D2CC6BDF0984FA55ECCC223A10 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		903540921F03545548F0970C5E8B1F28 /* KWFutureObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 23BCBB97DF395ED9F697DB347ACBFB49 /* KWFutureObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90383DD2AFE2FD10607F8C4FE66A355C /* KWObjCUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C859DA3AA87B6826CE257D67DCBBDFDE /* KWObjCUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91405C26439B58E076BDEF14BB1C9B5E /* KWDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2364B00D28AFEEA19938C02675F7E5 /* KWDeviceInfo.m */; };
+		94012F4F66FBCB71386A28B926185AA4 /* HYHAnimationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DFCD8A895FEC0F6B23377673E03DC6 /* HYHAnimationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96351348E49352FBA8B490C8769AC621 /* KiwiConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F35328A0B0CBB62ECE5C988E05F9D7B8 /* KiwiConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		963BD6B20F679F45D27BCA4FC779D657 /* KWRespondToSelectorMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = ACED5447A168E663525351BA8C538BC3 /* KWRespondToSelectorMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97EEF22535542FE1B2301BD2B7B7FEFB /* KWReceiveMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D68B16EC330B226C3E9815AF8BA6106B /* KWReceiveMatcher.m */; };
@@ -151,8 +151,8 @@
 		A4C3D9F8954FA07AD437585E1BEA166E /* KWStringUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CADECEFFEF6C68A7F5C1D9946FCFF54 /* KWStringUtilities.m */; };
 		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = C97519E15299A33A6EB821F20D49B05F /* UIImage+Snapshot.m */; };
 		A64AF6D8D7FDF7CCDCCFDE4815C60845 /* KWBeWithinMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 66FABCDECC61F738C913A33382381F3A /* KWBeWithinMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6BD7EBBCB9EB3A51BABF2BD23C291B7 /* HYHScrollViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95E1D75881FB9FB7A802E05CFF0B5DD5 /* HYHScrollViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A712A1FE23A8482EC53D2646F3C6EC1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
+		A79D3F168D0E79E0DB4F30E5DABA4490 /* HYHDistanceRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EAE5D0790DF346A0B7CD55DB5C565A9 /* HYHDistanceRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8C9BE424056D289238670BB20A890AF /* NSObject+KiwiStubAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 361BAE2B9974E156FC48DF12B5082BF7 /* NSObject+KiwiStubAdditions.m */; };
 		AA0DF01B22CEACBD46769152D74175AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		AD44BB99BF06DE413AE315F92EC9A6E5 /* KWAfterEachNode.h in Headers */ = {isa = PBXBuildFile; fileRef = A2DB30E7E7A175302F923DB016DB12C6 /* KWAfterEachNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -174,7 +174,6 @@
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C395BC4A83BEE2017EE1AC0E3F2531 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B9161BFE6F0299FDF02F097ED8EC904E /* KWInequalityMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC34EE92D4853AE203B774207C45784 /* KWInequalityMatcher.m */; };
 		BB035E1FE93185F9259EF1DD9CC16F8A /* KWBeTrueMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4129558DDE2F2A982239C3B6E4FDE7 /* KWBeTrueMatcher.m */; };
-		BBC44D28698121586C22875CA0C5B337 /* HYHScrollOffsetManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6825A0A0B5D2EA57D0DA8CB38BDC8D1 /* HYHScrollOffsetManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC947B8BE47D3AD0B2D25F8A779E73C2 /* KWUserDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 450112D6D6521E8A0E1A15B91C0A3C8A /* KWUserDefinedMatcher.m */; };
 		BE678BBFEF6576AF4BB72AF2C4FB673B /* KWLetNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C925690A8AA44575DFB9F387D554A5 /* KWLetNode.m */; };
 		C015416161F6C15368919102BAB3A6DC /* KWFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CC9081EACB1C3B89A927957FDD6531 /* KWFailure.m */; };
@@ -184,6 +183,7 @@
 		C3217811697384BE9FA9F9589CCA6A25 /* KWSuiteConfigurationBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D82B65342C774F2A024F2E48663F254 /* KWSuiteConfigurationBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3531590FC8C19F031BA711156BA8F82 /* KWProbePoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E5BA214AD01EDEEAEFA86CE6A14DC9 /* KWProbePoller.m */; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A83D318D9DA83C87CE3350A53E1A11 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7003987DD55046D6DD94F3C011B2124 /* HYHScrollOffsetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAEFFD60B91096D0D7728222E9248EA /* HYHScrollOffsetManager.m */; };
 		C7A3E1F157DAC1639FB646D161D16BDB /* KWHaveValueMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 01CF75125295B008F21189F479F73555 /* KWHaveValueMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C800B03CDB011C68C4CA9FEE0796DBAA /* KWExampleSuiteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D546A2E4EB212A944C612DB47494FB47 /* KWExampleSuiteBuilder.m */; };
 		C8D0644E3AFCF616220FF72135553713 /* KWCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 562EF3D68F0479F73D9DF53A02309F95 /* KWCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -196,11 +196,11 @@
 		CF87111CE5A447A27DA89FC288C9654C /* KWBeTrueMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C422E709F63802187FF9C0E2A7D84D33 /* KWBeTrueMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B3570F6A7984DF0E6FBB0A751C09114 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D1D60073397B1E4EFDD65B4D2E9F4212 /* KWMatchVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C685694D9001C568DC253DB8D46F7A /* KWMatchVerifier.m */; };
+		D237216787452D9268B70A40D6BDC367 /* HYHScrollViewObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = D5EBA99F8F98727F706E15180439364D /* HYHScrollViewObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3136AB387D519BBB1C3506A1E85E74E /* Pods-HYHScrollOffsetManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9434721C259333B625E867E343D943 /* Pods-HYHScrollOffsetManager_Example-dummy.m */; };
 		D74FEFEAC09F1E5ACA2EA0C5CE3C94AC /* KWExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 40BCCA69FCEC08C748A1AB0932012A1C /* KWExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D94C70E221BC494D370A7203F5D688A7 /* KWBeIdenticalToMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1D41B03B5F957D84724E767C9884B /* KWBeIdenticalToMatcher.m */; };
 		D9B66A7DBEEA77D032679B600DBD4602 /* NSInvocation+KiwiAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AD53AE2163CB4D0784FE0F6B269284FA /* NSInvocation+KiwiAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9BE92BB1DAA5A049B09359BB691AAB7 /* UIView+HYHParentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0923E1A4CB56CF1709FC5622F0652CFD /* UIView+HYHParentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB2783810E744F94967DCED028BA77CB /* KWCaptureSpy.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C754CE0414D37E2202171B1DB8F64A /* KWCaptureSpy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBB592B1BD73EDAAEE38221449304DCE /* KWBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 56AA874E68865B1FCFFEECAC743ED48A /* KWBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC3EC162647733328D396C9177BB0A6D /* KWContextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E52B44E39E1CC11B9D57752FB49DF6 /* KWContextNode.m */; };
@@ -233,7 +233,7 @@
 		FC251E1F0E59D0212874296CEF5C90F2 /* NSNumber+KiwiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7734196704A3E2823F6551C892CF04 /* NSNumber+KiwiAdditions.m */; };
 		FD677AD2E0A801400AFE773337921313 /* KWExampleSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AD663FCC9BBABC337CD2D1D38CE1B5 /* KWExampleSuite.m */; };
 		FEC731DD8CD6A0C74054CCCE16204D25 /* KWHaveValueMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CBDD9CB4DD7CE775D169DF5DD343CD /* KWHaveValueMatcher.m */; };
-		FF4ED21F0C0C0FF71A2B82D08DC0F8F9 /* HYHAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CE54B2304D55B6D46F696A4B4868A0 /* HYHAnimationManager.m */; };
+		FFC45168CE3C3933FD881183A7177843 /* HYHAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC40CFAA962946967337CA7BA95D210 /* HYHAnimationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -276,16 +276,15 @@
 		04D8AC8AE259DBCCDBB4C474A6801463 /* NSInvocation+KiwiAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+KiwiAdditions.m"; path = "Classes/Core/NSInvocation+KiwiAdditions.m"; sourceTree = "<group>"; };
 		063067AF0FF4B7405E641A8BDE2B21A3 /* Kiwi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kiwi-umbrella.h"; sourceTree = "<group>"; };
 		091C3DD49D22C33D8C471D6202654617 /* Kiwi.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kiwi.xcconfig; sourceTree = "<group>"; };
-		0923E1A4CB56CF1709FC5622F0652CFD /* UIView+HYHParentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+HYHParentViewController.h"; path = "HYHScrollOffsetManager/Classes/UIView+HYHParentViewController.h"; sourceTree = "<group>"; };
-		0B2F01BDE60306C1842F3BDE8E449C0C /* UIView+HYHParentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+HYHParentViewController.m"; path = "HYHScrollOffsetManager/Classes/UIView+HYHParentViewController.m"; sourceTree = "<group>"; };
 		0B3570F6A7984DF0E6FBB0A751C09114 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		0B9739392080E36FAD9E0EF42D8D083B /* KWPendingNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWPendingNode.h; path = Classes/Nodes/KWPendingNode.h; sourceTree = "<group>"; };
-		0C26E0179F81C13A342E1D93EE7708D4 /* Kiwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kiwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C26E0179F81C13A342E1D93EE7708D4 /* Kiwi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kiwi.framework; path = Kiwi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAA68F33A9D45BF7AD5DE66C6C62343 /* KWNotificationMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWNotificationMatcher.h; path = Classes/Matchers/KWNotificationMatcher.h; sourceTree = "<group>"; };
 		0E0807B8F0579BB0778BA749CE3273FE /* KWSharedExampleRegistry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWSharedExampleRegistry.m; path = "Classes/Shared Examples/KWSharedExampleRegistry.m"; sourceTree = "<group>"; };
 		0F8F4E059B1F4A7AA3A1CA7B897E14D6 /* Pods-HYHScrollOffsetManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HYHScrollOffsetManager_Tests-dummy.m"; sourceTree = "<group>"; };
 		116615F7FDD9EF74FFA26DBA4B718B47 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		12A83D318D9DA83C87CE3350A53E1A11 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		12C164EAE2A60D45158B33DB937271F4 /* UIView+HYHParentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+HYHParentViewController.h"; path = "HYHScrollOffsetManager/Classes/UIView+HYHParentViewController.h"; sourceTree = "<group>"; };
 		131A6499A364D962D8A113FBFCE67337 /* KWRespondToSelectorMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWRespondToSelectorMatcher.m; path = Classes/Matchers/KWRespondToSelectorMatcher.m; sourceTree = "<group>"; };
 		164649229850F95B726BEE9C794E56DF /* NSObject+KiwiSpyAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+KiwiSpyAdditions.h"; path = "Classes/Core/NSObject+KiwiSpyAdditions.h"; sourceTree = "<group>"; };
 		1746355FAA4CBEE6AD2579062AEE9587 /* KWWorkarounds.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWWorkarounds.m; path = Classes/Core/KWWorkarounds.m; sourceTree = "<group>"; };
@@ -296,17 +295,19 @@
 		20954E04F664DFF4A717E494BBEF15C6 /* KWAllTestsSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWAllTestsSuite.m; path = Classes/Config/KWAllTestsSuite.m; sourceTree = "<group>"; };
 		20D5D372BC57B28C9ACF673FE260924A /* KWExampleSuiteBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWExampleSuiteBuilder.h; path = Classes/Core/KWExampleSuiteBuilder.h; sourceTree = "<group>"; };
 		20FB9E0CD27C33C7260E66DAEE21514E /* KWChangeMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWChangeMatcher.m; path = Classes/Matchers/KWChangeMatcher.m; sourceTree = "<group>"; };
+		2195CCCA4A9D8E434A89F57372CED76C /* HYHScrollOffsetManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HYHScrollOffsetManager-dummy.m"; sourceTree = "<group>"; };
 		23BCBB97DF395ED9F697DB347ACBFB49 /* KWFutureObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWFutureObject.h; path = Classes/Core/KWFutureObject.h; sourceTree = "<group>"; };
 		241CACE477D2E9D5EA5E7D4FA66A11F7 /* KWGenericMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWGenericMatcher.h; path = Classes/Matchers/KWGenericMatcher.h; sourceTree = "<group>"; };
 		24F3D0365185FB6A1F2DB146EB0FDD70 /* KWNilMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWNilMatcher.m; path = Classes/Matchers/KWNilMatcher.m; sourceTree = "<group>"; };
 		26C395BC4A83BEE2017EE1AC0E3F2531 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		26EF4F1C0F520F6986690CA6491C2174 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		27CC5CF1F30F535265F587EE9462AEDA /* NSValue+KiwiAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+KiwiAdditions.m"; path = "Classes/Core/NSValue+KiwiAdditions.m"; sourceTree = "<group>"; };
 		27EC1169A761B908EF108A99E26D0C73 /* Pods-HYHScrollOffsetManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYHScrollOffsetManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		283D50ED3A58A9CD7C47EDC0F51CD047 /* KWConformToProtocolMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWConformToProtocolMatcher.m; path = Classes/Matchers/KWConformToProtocolMatcher.m; sourceTree = "<group>"; };
+		29DFCD8A895FEC0F6B23377673E03DC6 /* HYHAnimationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYHAnimationManager.h; path = HYHScrollOffsetManager/Classes/HYHAnimationManager.h; sourceTree = "<group>"; };
 		2B46CFB606E57B958114CEF668B18CF6 /* KWGenericMatchEvaluator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWGenericMatchEvaluator.m; path = Classes/Matchers/KWGenericMatchEvaluator.m; sourceTree = "<group>"; };
 		2CA1D41B03B5F957D84724E767C9884B /* KWBeIdenticalToMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeIdenticalToMatcher.m; path = Classes/Matchers/KWBeIdenticalToMatcher.m; sourceTree = "<group>"; };
 		2E20959BCA69567D8B6010F5D63992A0 /* KWCountType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWCountType.h; path = Classes/Core/KWCountType.h; sourceTree = "<group>"; };
-		2EF972A1650BEF998945261C6FFC58CF /* HYHScrollOffsetManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HYHScrollOffsetManager.modulemap; sourceTree = "<group>"; };
 		300C8C68D17C2706FDA3351CEFE39942 /* Pods-HYHScrollOffsetManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYHScrollOffsetManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3062DB64B7FEA99F6BE5D4BB5C6387E6 /* KWStub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWStub.h; path = Classes/Stubbing/KWStub.h; sourceTree = "<group>"; };
 		3160CE771A2F1969A42EE57D5E0BAA72 /* KWInequalityMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWInequalityMatcher.h; path = Classes/Matchers/KWInequalityMatcher.h; sourceTree = "<group>"; };
@@ -315,27 +316,27 @@
 		361BAE2B9974E156FC48DF12B5082BF7 /* NSObject+KiwiStubAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+KiwiStubAdditions.m"; path = "Classes/Stubbing/NSObject+KiwiStubAdditions.m"; sourceTree = "<group>"; };
 		366060D65FCC6E057992403D87EF52FB /* KWNilMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWNilMatcher.h; path = Classes/Matchers/KWNilMatcher.h; sourceTree = "<group>"; };
 		392CC808F96D09417837DBF7CCB10CB0 /* KWValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWValue.m; path = Classes/Core/KWValue.m; sourceTree = "<group>"; };
+		3A8CA420763D0661198AA0BF16E17348 /* HYHScrollOffsetManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYHScrollOffsetManager-prefix.pch"; sourceTree = "<group>"; };
+		3CAEFFD60B91096D0D7728222E9248EA /* HYHScrollOffsetManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYHScrollOffsetManager.m; path = HYHScrollOffsetManager/Classes/HYHScrollOffsetManager.m; sourceTree = "<group>"; };
 		3D0908F9B04FEA2041E6791C1A6A2D39 /* KWFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWFormatter.m; path = Classes/Core/KWFormatter.m; sourceTree = "<group>"; };
 		3DEAD0FAF4CCBB2816B971A485F42199 /* KWAny.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWAny.h; path = Classes/Core/KWAny.h; sourceTree = "<group>"; };
-		3F2426A8761D8DDD4F4684109C10BE40 /* HYHScrollOffsetManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HYHScrollOffsetManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2426A8761D8DDD4F4684109C10BE40 /* HYHScrollOffsetManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HYHScrollOffsetManager.framework; path = HYHScrollOffsetManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BCCA69FCEC08C748A1AB0932012A1C /* KWExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWExample.h; path = Classes/Core/KWExample.h; sourceTree = "<group>"; };
 		418A47F08BDE450EB690E123D1127937 /* KWItNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWItNode.h; path = Classes/Nodes/KWItNode.h; sourceTree = "<group>"; };
 		41E81686C7AA0D1531B16C975C9E0592 /* KWReceiveMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWReceiveMatcher.h; path = Classes/Matchers/KWReceiveMatcher.h; sourceTree = "<group>"; };
 		4390C948054CEF89ADD9E039EF96B06C /* Kiwi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kiwi.h; path = Classes/Core/Kiwi.h; sourceTree = "<group>"; };
-		43E32C230DACAB30D350455C256F4EA1 /* HYHDistanceRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYHDistanceRange.h; path = HYHScrollOffsetManager/Classes/HYHDistanceRange.h; sourceTree = "<group>"; };
 		443D7AD981A63FA15B65610C01CB8909 /* Pods-HYHScrollOffsetManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HYHScrollOffsetManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		450112D6D6521E8A0E1A15B91C0A3C8A /* KWUserDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWUserDefinedMatcher.m; path = Classes/Matchers/KWUserDefinedMatcher.m; sourceTree = "<group>"; };
-		452E1BBF997B0A537D44752AE57E5716 /* HYHScrollOffsetManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HYHScrollOffsetManager.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		4609B5920D4F6CEF9566C68A6CB00256 /* NSObject+KiwiStubAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+KiwiStubAdditions.h"; path = "Classes/Stubbing/NSObject+KiwiStubAdditions.h"; sourceTree = "<group>"; };
 		48297828E25636FEB112EF215B4A0088 /* KWBlockNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBlockNode.m; path = Classes/Nodes/KWBlockNode.m; sourceTree = "<group>"; };
 		4AADBEEE75127710F78E464181B2FF6B /* KWExistVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWExistVerifier.h; path = Classes/Verifiers/KWExistVerifier.h; sourceTree = "<group>"; };
 		4AB62F35D8033A0B945072FD415CA1B7 /* KWBeforeEachNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBeforeEachNode.h; path = Classes/Nodes/KWBeforeEachNode.h; sourceTree = "<group>"; };
+		4BE02F2A669F0C1A9D4079369F7D0CC7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		4DC61CA401DBF2FA43FD52E31E8AD62A /* KWStringContainsMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWStringContainsMatcher.h; path = Classes/Matchers/KWStringContainsMatcher.h; sourceTree = "<group>"; };
 		4DE4B1954F35EA4D500CC088E5A1E094 /* KWAfterAllNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWAfterAllNode.h; path = Classes/Nodes/KWAfterAllNode.h; sourceTree = "<group>"; };
 		4DEC5E6D6C42E2414D860B99A0A33063 /* KWRegularExpressionPatternMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWRegularExpressionPatternMatcher.h; path = Classes/Matchers/KWRegularExpressionPatternMatcher.h; sourceTree = "<group>"; };
 		5246595DB08521A2B86188BD97D54437 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		52AB14D58CF37577E935B96445C6BC05 /* KWFutureObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWFutureObject.m; path = Classes/Core/KWFutureObject.m; sourceTree = "<group>"; };
-		52CE54B2304D55B6D46F696A4B4868A0 /* HYHAnimationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYHAnimationManager.m; path = HYHScrollOffsetManager/Classes/HYHAnimationManager.m; sourceTree = "<group>"; };
 		53E52B44E39E1CC11B9D57752FB49DF6 /* KWContextNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWContextNode.m; path = Classes/Nodes/KWContextNode.m; sourceTree = "<group>"; };
 		54C5168705C56B8E2F44C9A8C13460F6 /* KWAfterAllNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWAfterAllNode.m; path = Classes/Nodes/KWAfterAllNode.m; sourceTree = "<group>"; };
 		55870982BC28FF4B164E5BDAA9C68420 /* Pods-HYHScrollOffsetManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HYHScrollOffsetManager_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -344,14 +345,14 @@
 		56AA874E68865B1FCFFEECAC743ED48A /* KWBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBlock.h; path = Classes/Core/KWBlock.h; sourceTree = "<group>"; };
 		584F70EEE371C59330F5B2F845C59CAE /* KWIntercept.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWIntercept.h; path = Classes/Stubbing/KWIntercept.h; sourceTree = "<group>"; };
 		58F2A539A10888C0225A488ED05C0A67 /* KWBeEmptyMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeEmptyMatcher.m; path = Classes/Matchers/KWBeEmptyMatcher.m; sourceTree = "<group>"; };
-		599D7C0DB8A961D0FA347815593928AD /* Pods_HYHScrollOffsetManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYHScrollOffsetManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		599D7C0DB8A961D0FA347815593928AD /* Pods_HYHScrollOffsetManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HYHScrollOffsetManager_Example.framework; path = "Pods-HYHScrollOffsetManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		599EFB453CF537225D9090E58065AF5F /* KWBeZeroMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeZeroMatcher.m; path = Classes/Matchers/KWBeZeroMatcher.m; sourceTree = "<group>"; };
 		59B90D0FF09568CD8DF89DF6DC036E8F /* NSInvocation+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+OCMAdditions.m"; path = "Classes/Core/NSInvocation+OCMAdditions.m"; sourceTree = "<group>"; };
 		5A169BB5CE15FD237861E93250C088B9 /* KWFailure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWFailure.h; path = Classes/Core/KWFailure.h; sourceTree = "<group>"; };
 		5A717A4CF3910591D0E2CCB15CE26E79 /* KWMatcherFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWMatcherFactory.m; path = Classes/Core/KWMatcherFactory.m; sourceTree = "<group>"; };
 		5B06F21A488E6B77D7861B563B85930D /* KiwiBlockMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KiwiBlockMacros.h; path = Classes/Core/KiwiBlockMacros.h; sourceTree = "<group>"; };
 		5B0C549BDDEA9FC101CD21ABF5A00D4F /* KWInvocationCapturer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWInvocationCapturer.m; path = Classes/Core/KWInvocationCapturer.m; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D60196C3FA1E655FD2CB1EDC8CE79D6 /* KWGenericMatchEvaluator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWGenericMatchEvaluator.h; path = Classes/Matchers/KWGenericMatchEvaluator.h; sourceTree = "<group>"; };
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5ECBDEBB75F33FC9F770B51165F5CAA4 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
@@ -373,7 +374,9 @@
 		6BDEC9DB309B7C776796E85C2A71D8D6 /* Pods-HYHScrollOffsetManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HYHScrollOffsetManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		6C180D4D02238C7873537B47C396B832 /* KWStringUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWStringUtilities.h; path = Classes/Core/KWStringUtilities.h; sourceTree = "<group>"; };
 		6C9F2816801A02D23FB1B368CBADD0AF /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
+		6EAE5D0790DF346A0B7CD55DB5C565A9 /* HYHDistanceRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYHDistanceRange.h; path = HYHScrollOffsetManager/Classes/HYHDistanceRange.h; sourceTree = "<group>"; };
 		6ECF35B45E603C9D6D9657ED61CF7BDB /* KWMessageTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWMessageTracker.h; path = Classes/Core/KWMessageTracker.h; sourceTree = "<group>"; };
+		6FC40CFAA962946967337CA7BA95D210 /* HYHAnimationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYHAnimationManager.m; path = HYHScrollOffsetManager/Classes/HYHAnimationManager.m; sourceTree = "<group>"; };
 		70B393111B29212F685395C521613738 /* Kiwi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kiwi-dummy.m"; sourceTree = "<group>"; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		738EA14A02D81874B540F366D06E8CE2 /* KWBackgroundTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBackgroundTask.m; path = Classes/Core/KWBackgroundTask.m; sourceTree = "<group>"; };
@@ -410,7 +413,6 @@
 		8BA08107EA825A22C553997E391A43C7 /* KWBlockNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBlockNode.h; path = Classes/Nodes/KWBlockNode.h; sourceTree = "<group>"; };
 		8BC91C1C42D92C8AA18A23D4ADD95CB9 /* KWLet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWLet.h; path = Classes/Core/KWLet.h; sourceTree = "<group>"; };
 		8C0E9A16F2D37327A221F0241C72963E /* Pods-HYHScrollOffsetManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HYHScrollOffsetManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8C484BAAAA38E71A303A310BB7B130E8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8F23379D6EC81180C7B0588030C111A4 /* KWBeMemberOfClassMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBeMemberOfClassMatcher.h; path = Classes/Matchers/KWBeMemberOfClassMatcher.h; sourceTree = "<group>"; };
 		8FC260C3E535294D004D4D3CD56A11B0 /* KWMessageSpying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWMessageSpying.h; path = Classes/Core/KWMessageSpying.h; sourceTree = "<group>"; };
@@ -420,29 +422,28 @@
 		910FFD9EF2E6F7BE98ADDE16C6C759BA /* NSObject+KiwiVerifierAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+KiwiVerifierAdditions.m"; path = "Classes/Core/NSObject+KiwiVerifierAdditions.m"; sourceTree = "<group>"; };
 		9388F5D2CC6BDF0984FA55ECCC223A10 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		9417E545A839EDED49AA267D883027D4 /* KWStringContainsMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWStringContainsMatcher.m; path = Classes/Matchers/KWStringContainsMatcher.m; sourceTree = "<group>"; };
-		9421EB8745917BA98CE3A8CDA2FC7E9A /* HYHAnimationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYHAnimationManager.h; path = HYHScrollOffsetManager/Classes/HYHAnimationManager.h; sourceTree = "<group>"; };
 		949DC0F46DB93E0C0B55CDAA95C01F9B /* KWBeSubclassOfClassMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeSubclassOfClassMatcher.m; path = Classes/Matchers/KWBeSubclassOfClassMatcher.m; sourceTree = "<group>"; };
-		95E1AE2FDE96AD04FA2995C8FB713528 /* Pods_HYHScrollOffsetManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYHScrollOffsetManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95E1D75881FB9FB7A802E05CFF0B5DD5 /* HYHScrollViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYHScrollViewManager.h; path = HYHScrollOffsetManager/Classes/HYHScrollViewManager.h; sourceTree = "<group>"; };
+		95E1AE2FDE96AD04FA2995C8FB713528 /* Pods_HYHScrollOffsetManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HYHScrollOffsetManager_Tests.framework; path = "Pods-HYHScrollOffsetManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EFF5191432CAFEDF4845BCAC312C5A /* KWSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWSpec.h; path = Classes/Core/KWSpec.h; sourceTree = "<group>"; };
 		97CB95DCF16C1C9B34AF122F1E10F964 /* KWRegisterMatchersNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWRegisterMatchersNode.h; path = Classes/Nodes/KWRegisterMatchersNode.h; sourceTree = "<group>"; };
+		990B8C87A81BBFDD825682AD907BC239 /* UIView+HYHParentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+HYHParentViewController.m"; path = "HYHScrollOffsetManager/Classes/UIView+HYHParentViewController.m"; sourceTree = "<group>"; };
 		9941A1AF58778B1B41F256FB35E66E88 /* Pods-HYHScrollOffsetManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HYHScrollOffsetManager_Example-Info.plist"; sourceTree = "<group>"; };
 		9A0AD0E3D314E27D601E1E18C507D3C3 /* KWObjCUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWObjCUtilities.m; path = Classes/Core/KWObjCUtilities.m; sourceTree = "<group>"; };
 		9AC34EE92D4853AE203B774207C45784 /* KWInequalityMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWInequalityMatcher.m; path = Classes/Matchers/KWInequalityMatcher.m; sourceTree = "<group>"; };
 		9B332723722A87CCF3702389CAA09C9F /* NSObject+KiwiMockAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+KiwiMockAdditions.m"; path = "Classes/Mocking/NSObject+KiwiMockAdditions.m"; sourceTree = "<group>"; };
 		9BC8A410B2D242034CFFE7FD69B9F902 /* NSMethodSignature+KiwiAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+KiwiAdditions.m"; path = "Classes/Core/NSMethodSignature+KiwiAdditions.m"; sourceTree = "<group>"; };
-		9CC2991B9186142CD6FC248A2C55388C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9D1E89A4EE0D6C2481893F9B73EE9C02 /* Pods-HYHScrollOffsetManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYHScrollOffsetManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9D74F835103BEFA9910F09843DBF5EEF /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EE89394C5FB72264D71F8A5369316A3 /* KWMatcherFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWMatcherFactory.h; path = Classes/Core/KWMatcherFactory.h; sourceTree = "<group>"; };
 		9FA33FED0A370B9666BD8D3311727E39 /* KWVerifying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWVerifying.h; path = Classes/Verifiers/KWVerifying.h; sourceTree = "<group>"; };
+		A21F4F1CF2977509E62FA16A52C79F20 /* HYHScrollOffsetManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HYHScrollOffsetManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2BFB77C8C61C8061D7DF6FA6E727F6F /* NSObject+KiwiVerifierAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+KiwiVerifierAdditions.h"; path = "Classes/Core/NSObject+KiwiVerifierAdditions.h"; sourceTree = "<group>"; };
 		A2DB30E7E7A175302F923DB016DB12C6 /* KWAfterEachNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWAfterEachNode.h; path = Classes/Nodes/KWAfterEachNode.h; sourceTree = "<group>"; };
 		A353F4009D108FAEC553777F65FAADF2 /* KWMessagePattern.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWMessagePattern.h; path = Classes/Core/KWMessagePattern.h; sourceTree = "<group>"; };
 		A3EDC6B608AE85BA21C44B251D68A88F /* KWChangeMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWChangeMatcher.h; path = Classes/Matchers/KWChangeMatcher.h; sourceTree = "<group>"; };
 		A4C754CE0414D37E2202171B1DB8F64A /* KWCaptureSpy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWCaptureSpy.h; path = Classes/Core/KWCaptureSpy.h; sourceTree = "<group>"; };
-		A55E95C878701B02069640C6605C7042 /* HYHScrollOffsetManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HYHScrollOffsetManager-Info.plist"; sourceTree = "<group>"; };
+		A6AE73AD213F349A7FF8332E2279D5D2 /* HYHScrollOffsetManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HYHScrollOffsetManager-Info.plist"; sourceTree = "<group>"; };
 		A75F33C46C2EA2A5CC9BBA69CA8D96C7 /* KWStringPrefixMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWStringPrefixMatcher.m; path = Classes/Matchers/KWStringPrefixMatcher.m; sourceTree = "<group>"; };
 		AA9C2EB907EF949A1B252DA1A6FBE87E /* KWMessagePattern.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWMessagePattern.m; path = Classes/Core/KWMessagePattern.m; sourceTree = "<group>"; };
 		AC1291A580633811D4A8B70B19581DF5 /* KWConformToProtocolMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWConformToProtocolMatcher.h; path = Classes/Matchers/KWConformToProtocolMatcher.h; sourceTree = "<group>"; };
@@ -458,7 +459,6 @@
 		B263381287CB02E1AE3787E249DA0C18 /* KWRegularExpressionPatternMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWRegularExpressionPatternMatcher.m; path = Classes/Matchers/KWRegularExpressionPatternMatcher.m; sourceTree = "<group>"; };
 		B2CCD203EFDA3D829174D14FE245F84F /* KWNotificationMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWNotificationMatcher.m; path = Classes/Matchers/KWNotificationMatcher.m; sourceTree = "<group>"; };
 		B656D420615385E6BC1922A1C5A94107 /* KWWorkarounds.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWWorkarounds.h; path = Classes/Core/KWWorkarounds.h; sourceTree = "<group>"; };
-		B6825A0A0B5D2EA57D0DA8CB38BDC8D1 /* HYHScrollOffsetManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYHScrollOffsetManager-umbrella.h"; sourceTree = "<group>"; };
 		B75C30DB74A18D09A7D894833397237E /* Kiwi-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kiwi-prefix.pch"; sourceTree = "<group>"; };
 		B78C561A618908D1D34A62AFF7C1EF36 /* KWSuiteConfigurationBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWSuiteConfigurationBase.m; path = Classes/Config/KWSuiteConfigurationBase.m; sourceTree = "<group>"; };
 		B7A59D0EA50236854194CA4390FDC4DD /* KWCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWCallSite.m; path = Classes/Core/KWCallSite.m; sourceTree = "<group>"; };
@@ -470,11 +470,10 @@
 		BF9434721C259333B625E867E343D943 /* Pods-HYHScrollOffsetManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HYHScrollOffsetManager_Example-dummy.m"; sourceTree = "<group>"; };
 		BF9653A8965D348ED67E548617FD1F6E /* KWProbePoller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWProbePoller.h; path = Classes/Core/KWProbePoller.h; sourceTree = "<group>"; };
 		BFEBB9C931D850688E55564D5CC6CCA8 /* Kiwi-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kiwi-Info.plist"; sourceTree = "<group>"; };
-		C1EB029C60977CA9730253726EAFF40A /* HYHScrollOffsetManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYHScrollOffsetManager.xcconfig; sourceTree = "<group>"; };
-		C2124A2B79BDD0F31CDD64F8E4DD63E5 /* HYHScrollViewObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYHScrollViewObserver.m; path = HYHScrollOffsetManager/Classes/HYHScrollViewObserver.m; sourceTree = "<group>"; };
 		C390BB20A5F47F051B2B117C7F0E0B24 /* KWMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWMatcher.m; path = Classes/Core/KWMatcher.m; sourceTree = "<group>"; };
 		C3FAC6F06B2FE70980CA83657DD3801D /* KWAfterEachNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWAfterEachNode.m; path = Classes/Nodes/KWAfterEachNode.m; sourceTree = "<group>"; };
 		C422E709F63802187FF9C0E2A7D84D33 /* KWBeTrueMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBeTrueMatcher.h; path = Classes/Matchers/KWBeTrueMatcher.h; sourceTree = "<group>"; };
+		C48E2D6CB7F41851E907012B7A032226 /* HYHScrollOffsetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYHScrollOffsetManager.h; path = HYHScrollOffsetManager/Classes/HYHScrollOffsetManager.h; sourceTree = "<group>"; };
 		C65A2D1F1FFF3A35045570D12816A175 /* Pods-HYHScrollOffsetManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HYHScrollOffsetManager_Tests.modulemap"; sourceTree = "<group>"; };
 		C859DA3AA87B6826CE257D67DCBBDFDE /* KWObjCUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWObjCUtilities.h; path = Classes/Core/KWObjCUtilities.h; sourceTree = "<group>"; };
 		C8F4CD2AE3790F43D6B42176B6E957D8 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
@@ -483,23 +482,24 @@
 		C9DECDE78D695B60E069EDE3DD301B97 /* KWContainMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWContainMatcher.h; path = Classes/Matchers/KWContainMatcher.h; sourceTree = "<group>"; };
 		CA2364B00D28AFEEA19938C02675F7E5 /* KWDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWDeviceInfo.m; path = Classes/Core/KWDeviceInfo.m; sourceTree = "<group>"; };
 		CAA8E7925B52CE72EF2286CCEC8782B4 /* KWUserDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWUserDefinedMatcher.h; path = Classes/Matchers/KWUserDefinedMatcher.h; sourceTree = "<group>"; };
+		CBACC3922EA38EF4735E7BC8A9645044 /* HYHScrollOffsetManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HYHScrollOffsetManager.xcconfig; sourceTree = "<group>"; };
 		CC75D4C8B56CE357E2BBC00EA14D9242 /* NSValue+KiwiAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+KiwiAdditions.h"; path = "Classes/Core/NSValue+KiwiAdditions.h"; sourceTree = "<group>"; };
 		CE3D98CE95008EAD6AA7555C1DD0B0C9 /* KWSymbolicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWSymbolicator.h; path = Classes/Core/KWSymbolicator.h; sourceTree = "<group>"; };
 		CE48E476D83903412BDB850186645789 /* KWStringPrefixMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWStringPrefixMatcher.h; path = Classes/Matchers/KWStringPrefixMatcher.h; sourceTree = "<group>"; };
 		CFA9AFBFA8E6BAF3EBEA7A5D64F41823 /* KWExistVerifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWExistVerifier.m; path = Classes/Verifiers/KWExistVerifier.m; sourceTree = "<group>"; };
-		D22E29D35F41CF3F3554E5870C31992A /* HYHScrollOffsetManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYHScrollOffsetManager-prefix.pch"; sourceTree = "<group>"; };
 		D2AEE090DFECDBC72B6830E7AB920EA1 /* KWBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBlock.m; path = Classes/Core/KWBlock.m; sourceTree = "<group>"; };
 		D4CBDD9CB4DD7CE775D169DF5DD343CD /* KWHaveValueMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWHaveValueMatcher.m; path = Classes/Matchers/KWHaveValueMatcher.m; sourceTree = "<group>"; };
 		D5130349A45B851F32213B6356FE059C /* KWItNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWItNode.m; path = Classes/Nodes/KWItNode.m; sourceTree = "<group>"; };
 		D514FF1A2F5C61A0E1AC879D6D9E6BA9 /* KWNull.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWNull.h; path = Classes/Core/KWNull.h; sourceTree = "<group>"; };
 		D546A2E4EB212A944C612DB47494FB47 /* KWExampleSuiteBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWExampleSuiteBuilder.m; path = Classes/Core/KWExampleSuiteBuilder.m; sourceTree = "<group>"; };
-		D62B61238B3EF0F1F20F95672482810D /* HYHScrollViewObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYHScrollViewObserver.h; path = HYHScrollOffsetManager/Classes/HYHScrollViewObserver.h; sourceTree = "<group>"; };
+		D5EBA99F8F98727F706E15180439364D /* HYHScrollViewObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HYHScrollViewObserver.h; path = HYHScrollOffsetManager/Classes/HYHScrollViewObserver.h; sourceTree = "<group>"; };
 		D654DC1E475934D5F5B3B8CB471F0524 /* KWBlockRaiseMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBlockRaiseMatcher.m; path = Classes/Matchers/KWBlockRaiseMatcher.m; sourceTree = "<group>"; };
 		D68B16EC330B226C3E9815AF8BA6106B /* KWReceiveMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWReceiveMatcher.m; path = Classes/Matchers/KWReceiveMatcher.m; sourceTree = "<group>"; };
 		D69E92A740DBAC31BFA7A7D884E5FA7D /* KWLetNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWLetNode.h; path = Classes/Nodes/KWLetNode.h; sourceTree = "<group>"; };
 		DD086EA5330F9948188205B7FE681F9B /* KWSharedExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWSharedExample.m; path = "Classes/Shared Examples/KWSharedExample.m"; sourceTree = "<group>"; };
 		DEDD2CF8C7A51F0D5CDA80F1F844D89B /* NSNumber+KiwiAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+KiwiAdditions.h"; path = "Classes/Core/NSNumber+KiwiAdditions.h"; sourceTree = "<group>"; };
 		DF32F82C31A3A3FA65A914ABA49510EF /* KWBlockRaiseMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBlockRaiseMatcher.h; path = Classes/Matchers/KWBlockRaiseMatcher.h; sourceTree = "<group>"; };
+		DF48F45B22642E49E2E242410E625A0F /* HYHScrollViewObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYHScrollViewObserver.m; path = HYHScrollOffsetManager/Classes/HYHScrollViewObserver.m; sourceTree = "<group>"; };
 		DFC84CA9C0835AEA2BAC659ADA2F3B8E /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		E04B3767DF7B180747195DA327F4908C /* KWBeforeAllNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBeforeAllNode.h; path = Classes/Nodes/KWBeforeAllNode.h; sourceTree = "<group>"; };
 		E0BD916776B196F31437EE0A775BBE81 /* KWSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWSpec.m; path = Classes/Core/KWSpec.m; sourceTree = "<group>"; };
@@ -510,13 +510,13 @@
 		E5E129ED522076241A5A1084DA9E265C /* NSProxy+KiwiVerifierAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSProxy+KiwiVerifierAdditions.h"; path = "Classes/Core/NSProxy+KiwiVerifierAdditions.h"; sourceTree = "<group>"; };
 		E67FCB6C72D81569B61328B67CD3EE1A /* KWMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWMock.h; path = Classes/Mocking/KWMock.h; sourceTree = "<group>"; };
 		E86D9780B16C2F3A52C6A5C3599FBBBC /* KWMatchVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWMatchVerifier.h; path = Classes/Verifiers/KWMatchVerifier.h; sourceTree = "<group>"; };
-		EAE61113834F102829042A3E5C77FB02 /* HYHScrollViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HYHScrollViewManager.m; path = HYHScrollOffsetManager/Classes/HYHScrollViewManager.m; sourceTree = "<group>"; };
 		EB1DDEE22CEAEE950A97FE08A8233D61 /* KWContainMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWContainMatcher.m; path = Classes/Matchers/KWContainMatcher.m; sourceTree = "<group>"; };
 		EE163E2B62465541714877C7392DE4AC /* KWSymbolicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWSymbolicator.m; path = Classes/Core/KWSymbolicator.m; sourceTree = "<group>"; };
 		EEB0A9BEBDAC3F7009E218380D19459A /* KWInvocationCapturer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWInvocationCapturer.h; path = Classes/Core/KWInvocationCapturer.h; sourceTree = "<group>"; };
+		EF32496055841357B991C29E1273B3EB /* HYHScrollOffsetManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HYHScrollOffsetManager.modulemap; sourceTree = "<group>"; };
 		F14592024216C0787D399A9C55CF47AE /* KWBeEmptyMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBeEmptyMatcher.h; path = Classes/Matchers/KWBeEmptyMatcher.h; sourceTree = "<group>"; };
-		F29F52DE16B6BBF9B4E3F24C2FC612B1 /* HYHScrollOffsetManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HYHScrollOffsetManager-dummy.m"; sourceTree = "<group>"; };
 		F35328A0B0CBB62ECE5C988E05F9D7B8 /* KiwiConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KiwiConfiguration.h; path = Classes/Core/KiwiConfiguration.h; sourceTree = "<group>"; };
+		F38BBC68D9C5AABD8627DC33C0AD4E8F /* HYHScrollOffsetManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HYHScrollOffsetManager-umbrella.h"; sourceTree = "<group>"; };
 		F39E2B26ED535B1E1AA8CC2B75EF663D /* Pods-HYHScrollOffsetManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HYHScrollOffsetManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F52048E05220A31BC0F3D92E4674C45E /* KWRegisterMatchersNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWRegisterMatchersNode.m; path = Classes/Nodes/KWRegisterMatchersNode.m; sourceTree = "<group>"; };
 		F78C1205EAEC92F3613B46069C517375 /* KWNull.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWNull.m; path = Classes/Core/KWNull.m; sourceTree = "<group>"; };
@@ -592,20 +592,20 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		350A1E4259FA0BB12DEF8AC62CAFF724 /* HYHScrollOffsetManager */ = {
+		0DB3447E24A8EDBE7506FB662E101568 /* HYHScrollOffsetManager */ = {
 			isa = PBXGroup;
 			children = (
-				95E1D75881FB9FB7A802E05CFF0B5DD5 /* HYHScrollViewManager.h */,
-				EAE61113834F102829042A3E5C77FB02 /* HYHScrollViewManager.m */,
-				0923E1A4CB56CF1709FC5622F0652CFD /* UIView+HYHParentViewController.h */,
-				0B2F01BDE60306C1842F3BDE8E449C0C /* UIView+HYHParentViewController.m */,
-				9421EB8745917BA98CE3A8CDA2FC7E9A /* HYHAnimationManager.h */,
-				52CE54B2304D55B6D46F696A4B4868A0 /* HYHAnimationManager.m */,
-				43E32C230DACAB30D350455C256F4EA1 /* HYHDistanceRange.h */,
-				D62B61238B3EF0F1F20F95672482810D /* HYHScrollViewObserver.h */,
-				C2124A2B79BDD0F31CDD64F8E4DD63E5 /* HYHScrollViewObserver.m */,
-				63FB89286736070D476678B7E96857AD /* Pod */,
-				4CE1B30613F0087A0A699127BAF74363 /* Support Files */,
+				29DFCD8A895FEC0F6B23377673E03DC6 /* HYHAnimationManager.h */,
+				6FC40CFAA962946967337CA7BA95D210 /* HYHAnimationManager.m */,
+				6EAE5D0790DF346A0B7CD55DB5C565A9 /* HYHDistanceRange.h */,
+				C48E2D6CB7F41851E907012B7A032226 /* HYHScrollOffsetManager.h */,
+				3CAEFFD60B91096D0D7728222E9248EA /* HYHScrollOffsetManager.m */,
+				D5EBA99F8F98727F706E15180439364D /* HYHScrollViewObserver.h */,
+				DF48F45B22642E49E2E242410E625A0F /* HYHScrollViewObserver.m */,
+				12C164EAE2A60D45158B33DB937271F4 /* UIView+HYHParentViewController.h */,
+				990B8C87A81BBFDD825682AD907BC239 /* UIView+HYHParentViewController.m */,
+				84A056CC9AF71407E7DCCFE7F0FA97BD /* Pod */,
+				5B31EBC8FB463B8C5CF91AF2458D72CE /* Support Files */,
 			);
 			name = HYHScrollOffsetManager;
 			path = ../..;
@@ -639,31 +639,22 @@
 				BE2D686217FFA06A86379BF2C9E58B39 /* Support Files */,
 				0752E4EE5A73BE0651E794BE11413270 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
-		4CE1B30613F0087A0A699127BAF74363 /* Support Files */ = {
+		5B31EBC8FB463B8C5CF91AF2458D72CE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2EF972A1650BEF998945261C6FFC58CF /* HYHScrollOffsetManager.modulemap */,
-				C1EB029C60977CA9730253726EAFF40A /* HYHScrollOffsetManager.xcconfig */,
-				F29F52DE16B6BBF9B4E3F24C2FC612B1 /* HYHScrollOffsetManager-dummy.m */,
-				A55E95C878701B02069640C6605C7042 /* HYHScrollOffsetManager-Info.plist */,
-				D22E29D35F41CF3F3554E5870C31992A /* HYHScrollOffsetManager-prefix.pch */,
-				B6825A0A0B5D2EA57D0DA8CB38BDC8D1 /* HYHScrollOffsetManager-umbrella.h */,
+				EF32496055841357B991C29E1273B3EB /* HYHScrollOffsetManager.modulemap */,
+				CBACC3922EA38EF4735E7BC8A9645044 /* HYHScrollOffsetManager.xcconfig */,
+				2195CCCA4A9D8E434A89F57372CED76C /* HYHScrollOffsetManager-dummy.m */,
+				A6AE73AD213F349A7FF8332E2279D5D2 /* HYHScrollOffsetManager-Info.plist */,
+				3A8CA420763D0661198AA0BF16E17348 /* HYHScrollOffsetManager-prefix.pch */,
+				F38BBC68D9C5AABD8627DC33C0AD4E8F /* HYHScrollOffsetManager-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/HYHScrollOffsetManager";
-			sourceTree = "<group>";
-		};
-		63FB89286736070D476678B7E96857AD /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				452E1BBF997B0A537D44752AE57E5716 /* HYHScrollOffsetManager.podspec */,
-				8C484BAAAA38E71A303A310BB7B130E8 /* LICENSE */,
-				9CC2991B9186142CD6FC248A2C55388C /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		7DE5752EED0A4C4A430975244947611A /* iOS */ = {
@@ -680,9 +671,19 @@
 		82568A65A0E8E5462386B881674D764F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				350A1E4259FA0BB12DEF8AC62CAFF724 /* HYHScrollOffsetManager */,
+				0DB3447E24A8EDBE7506FB662E101568 /* HYHScrollOffsetManager */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		84A056CC9AF71407E7DCCFE7F0FA97BD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A21F4F1CF2977509E62FA16A52C79F20 /* HYHScrollOffsetManager.podspec */,
+				26EF4F1C0F520F6986690CA6491C2174 /* LICENSE */,
+				4BE02F2A669F0C1A9D4079369F7D0CC7 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		B93060D53A3BF3383B7D1A711790AA72 /* Kiwi */ = {
@@ -874,6 +875,7 @@
 				27CC5CF1F30F535265F587EE9462AEDA /* NSValue+KiwiAdditions.m */,
 				BA6C0CA999BFF90827046B8D4AD8E65C /* Support Files */,
 			);
+			name = Kiwi;
 			path = Kiwi;
 			sourceTree = "<group>";
 		};
@@ -1006,6 +1008,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C9CC8AA67520919242C07BA8C92EDD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94012F4F66FBCB71386A28B926185AA4 /* HYHAnimationManager.h in Headers */,
+				A79D3F168D0E79E0DB4F30E5DABA4490 /* HYHDistanceRange.h in Headers */,
+				138533881022EB3E25E22923DA730458 /* HYHScrollOffsetManager-umbrella.h in Headers */,
+				60797CD5AC988B0D4F8C44FFF1B894B8 /* HYHScrollOffsetManager.h in Headers */,
+				D237216787452D9268B70A40D6BDC367 /* HYHScrollViewObserver.h in Headers */,
+				57DE7ED7464A8663C1B10472EA23512B /* UIView+HYHParentViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1B31E3BBD42C467524A97D2DD244FE4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1121,19 +1136,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F263174F63918312EE77CDD82A00CE7D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BBC44D28698121586C22875CA0C5B337 /* HYHScrollOffsetManager-umbrella.h in Headers */,
-				D9BE92BB1DAA5A049B09359BB691AAB7 /* UIView+HYHParentViewController.h in Headers */,
-				0F858E812679B6C65550C70E9B4ED482 /* HYHAnimationManager.h in Headers */,
-				8B7F734609198BE0630C3126545AAFEE /* HYHDistanceRange.h in Headers */,
-				A6BD7EBBCB9EB3A51BABF2BD23C291B7 /* HYHScrollViewManager.h in Headers */,
-				73672D9A1C319D917B5CE0CE4AD79477 /* HYHScrollViewObserver.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1160,8 +1162,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51D3D370445D5FCC39FFEAA5F35E6FA8 /* Build configuration list for PBXNativeTarget "HYHScrollOffsetManager" */;
 			buildPhases = (
-				F263174F63918312EE77CDD82A00CE7D /* Headers */,
-				55536837334910AAB0736526F0F07074 /* Sources */,
+				7C9CC8AA67520919242C07BA8C92EDD5 /* Headers */,
+				FBB11FE181C02850B29DD48B26FCF60C /* Sources */,
 				7BB11CECB240F7E19CDDBC5B32C4B560 /* Frameworks */,
 				F786B403BF3831BB9D18328193A67354 /* Resources */,
 			);
@@ -1401,18 +1403,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55536837334910AAB0736526F0F07074 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AAD90EB900833B886733D0D55A3F267 /* HYHScrollOffsetManager-dummy.m in Sources */,
-				0CF107163C3CD2A8B87CDBCF0E843813 /* UIView+HYHParentViewController.m in Sources */,
-				FF4ED21F0C0C0FF71A2B82D08DC0F8F9 /* HYHAnimationManager.m in Sources */,
-				5D8B8CEC78F4DBBE5D93735D7F60B108 /* HYHScrollViewManager.m in Sources */,
-				4BC50A9E70EBDADFBA1ADF54FD2875B0 /* HYHScrollViewObserver.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A48201AC594B2E6B09C0EE0396BC1377 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1434,6 +1424,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C1312136032175AE1DB129F08A372D /* Pods-HYHScrollOffsetManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB11FE181C02850B29DD48B26FCF60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC45168CE3C3933FD881183A7177843 /* HYHAnimationManager.m in Sources */,
+				0165A8B70C285812AFB0409A195A3A76 /* HYHScrollOffsetManager-dummy.m in Sources */,
+				C7003987DD55046D6DD94F3C011B2124 /* HYHScrollOffsetManager.m in Sources */,
+				8CECB222000ACC8E9B6ED3E04D32D157 /* HYHScrollViewObserver.m in Sources */,
+				7476C7A9CD57F12C37239C2901B21D5D /* UIView+HYHParentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1585,7 +1587,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1593,7 +1596,7 @@
 		};
 		4D10E0781D0CF981E37315DFCBC83F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1EB029C60977CA9730253726EAFF40A /* HYHScrollOffsetManager.xcconfig */;
+			baseConfigurationReference = CBACC3922EA38EF4735E7BC8A9645044 /* HYHScrollOffsetManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1656,7 +1659,7 @@
 		};
 		7997397FA2B54634EF3D1FEF35961DCE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1EB029C60977CA9730253726EAFF40A /* HYHScrollOffsetManager.xcconfig */;
+			baseConfigurationReference = CBACC3922EA38EF4735E7BC8A9645044 /* HYHScrollOffsetManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

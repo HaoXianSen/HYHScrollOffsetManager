@@ -26,14 +26,14 @@ pod 'HYHScrollOffsetManager'
 
 ## Example
 ``` ruby
-@property (nonatomic, strong) HYHScrollViewManager *scrollViewManager;
+@property (nonatomic, strong) HYHScrollOffsetManager *scrollViewManager;
 /// 应用默认的navigation bar 处理动画
-_scrollViewManager = [HYHScrollViewManager scrollViewManager:_tableView];
+_scrollViewManager = [HYHScrollOffsetManager scrollOffsetManager:_tableView];
 _scrollViewManager.animateRange = HYHAnimateDistanceRangeMake(100, 90, 0.25);
 
 /// 应用自己处理
 
-_scrollViewManager = [HYHScrollViewManager scrollViewManager:_tableView];
+_scrollViewManager = [HYHScrollOffsetManager scrollOffsetManager:_tableView];
 _scrollViewManager.animateRange = HYHAnimateDistanceRangeMake(100, 90, 0.25);
 _scrollViewManager.animationType = HYHScrollOffsetAnimationTypeCustom;
 _scrollViewManager.customAnimationBlock = ^(CGPoint offset, HYHAnimateDistanceRange range) {

@@ -6,11 +6,11 @@
 //  Copyright © 2018年 Harray. All rights reserved.
 //
 
-#import "HYHScrollViewManager.h"
+#import "HYHScrollOffsetManager.h"
 #import "HYHScrollViewObserver.h"
 #import "UIView+HYHParentViewController.h"
 #import "HYHAnimationManager.h"
-@interface HYHScrollViewManager()
+@interface HYHScrollOffsetManager()
 
 @property (nonatomic, strong) HYHScrollViewObserver *scrollViewOffsetObserver;
 @property (nonatomic, weak) UINavigationController *currentNav;
@@ -18,7 +18,7 @@
 @property (nonatomic, assign) CGFloat lastAlpha;
 @end
 
-@implementation HYHScrollViewManager
+@implementation HYHScrollOffsetManager
 
 - (HYHAnimationManager *)animationManager {
     if (!_animationManager) {
@@ -44,7 +44,7 @@
     return self;
 }
 
-+ (instancetype)scrollViewManager:(UIScrollView *)srcollView {
++ (instancetype)scrollOffsetManager:(UIScrollView *)srcollView {
     return [[self alloc] initWithScrollView:srcollView];
 }
 
