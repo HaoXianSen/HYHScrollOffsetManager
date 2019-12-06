@@ -7,36 +7,39 @@
 //
 
 #import "YHScrollViewManager.h"
-#import "YHScrollViewDelegate.h"
+#import "YHScrollViewObserver.h"
 #import "UIView+YHParentViewController.h"
+#import "YHAnimationManager.h"
 @interface YHScrollViewManager()
 
-@property (nonatomic, strong) YHScrollViewDelegate *delegate;
+@property (nonatomic, strong) YHScrollViewObserver *scrollViewOffsetObserver;
 
+@property (nonatomic, strong) YHAnimationManager *animationManager;
+@property (nonatomic, assign) CGFloat lastAlpha;
 @end
 
 @implementation YHScrollViewManager
 
-- (YHScrollViewDelegate *)delegate {
-    if (!_delegate) {
-        _delegate = [[YHScrollViewDelegate alloc] init];
+- (YHAnimationManager *)animationManager {
+    if (!_animationManager) {
+        _animationManager = [[YHAnimationManager alloc] init];
     }
-    return _delegate;
-}
-- (void)setAnimateRange:(YHAnimateDistanceRange)animateRange {
-    _animateRange = animateRange;
-    self.delegate.range = animateRange;
+    return _animationManager;
 }
 
 - (instancetype)initWithScrollView:(UIScrollView *)srcollView {
+    NSParameterAssert(srcollView && [srcollView isKindOfClass:UIScrollView.class]);
+    
     if (self = [super init]) {
+        _lastAlpha = 1;
         _scrollView = srcollView;
-        _scrollView.delegate = self.delegate;
         _animateRange = YHAnimateDistanceRangeMake(100, 100, 0.25);
         _currentNav = [srcollView navigationControl];
-        
-        _delegate.range = _animateRange;
-        _delegate.nav = _currentNav;
+        _scrollViewOffsetObserver = [YHScrollViewObserver scrollViewObserverWithObervedScrollView:_scrollView];
+        __weak typeof(self) weakSelf = self;
+        _scrollViewOffsetObserver.offsetObserveCallBack = ^(CGPoint contentOffset) {
+            [weakSelf scrollViewOffsetChanged:contentOffset];
+        };
     }
     return self;
 }
@@ -45,9 +48,33 @@
     return [[self alloc] initWithScrollView:srcollView];
 }
 
+- (void)scrollViewOffsetChanged:(CGPoint)offset {
+    if (self.animationType == YHScrollOffsetAnimationTypeCustom) {
+        if (self.customAnimationBlock) {
+            self.customAnimationBlock(offset, self.animateRange);
+        }
+        return;
+    }
+    
+    CGFloat offsetY = offset.y;
+    if (offsetY > self.animateRange.beiginLocation && offsetY < self.animateRange.beiginLocation + self.animateRange.distance) {
+        CGFloat alpha = (offsetY - self.animateRange.beiginLocation) / self.animateRange.distance;
+        [YHAnimationManager alphaAnimationWithRange:YHAnimateAlphaRangeMake(_lastAlpha, alpha) durantion:self.animateRange.duration animView:self.currentNav.navigationBar];
+        _lastAlpha = alpha;
+    } else if (offsetY <= self.animateRange.beiginLocation) {
+        [YHAnimationManager alphaAnimationWithRange:YHAnimateAlphaRangeMake(_lastAlpha, 0) durantion:self.animateRange.duration animView:self.currentNav.navigationBar];
+        _lastAlpha = 0;
+    } else {
+        [YHAnimationManager alphaAnimationWithRange:YHAnimateAlphaRangeMake(_lastAlpha, 1) durantion:self.animateRange.duration animView:self.currentNav.navigationBar];
+        _lastAlpha = 1;
+    }
+}
+
 - (void)setNavigationBarHidden:(BOOL)isHidden animated:(BOOL)animated {
     if (self.currentNav) {
         [self.currentNav setNavigationBarHidden:isHidden animated:animated];
     }
 }
+
+
 @end

@@ -11,7 +11,7 @@
 // 表示一组动画起始位置、持续时间、距离的结构体
 typedef struct _YHAnimateDistanceRange
 {
-    CGFloat beiginLocation;
+    CGFloat beiginLocation; 
     CGFloat distance;
     CGFloat duration;
     

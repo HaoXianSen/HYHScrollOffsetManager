@@ -10,6 +10,13 @@
 #import <UIKit/UIKit.h>
 #import "YHDistanceRange.h"
 
+typedef NS_ENUM(NSUInteger, YHScrollOffsetAnimationType) {
+    YHScrollOffsetAnimationTypeNavigationBarAlpha,// 改变navigationBar 的透明度
+    YHScrollOffsetAnimationTypeCustom, // 自定义
+};
+
+typedef void(^YHCustomAnimationBlock)(CGPoint offset, YHAnimateDistanceRange range);
+
 @interface YHScrollViewManager : NSObject
 
 /**管理者srcollView**/
@@ -17,6 +24,8 @@
 @property (nonatomic, weak) UINavigationController *currentNav;
 @property (nonatomic, assign) YHAnimateDistanceRange animateRange;
 
+@property (nonatomic, assign) YHScrollOffsetAnimationType animationType;
+@property (nonatomic, copy) YHCustomAnimationBlock customAnimationBlock;
 /**
  初始化srcollView管理者
 

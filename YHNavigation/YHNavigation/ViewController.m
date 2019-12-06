@@ -7,13 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "YHScrollViewManager.h"
+#import "YHNavigationBarAnimation/YHScrollViewManager.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
 
 @property (nonatomic, weak)UITableView *tableView;
 
-/**<#注释#>**/
 @property (nonatomic, strong) YHScrollViewManager *scrollViewManager;
 
 @end
