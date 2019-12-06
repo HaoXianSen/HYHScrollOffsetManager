@@ -24,8 +24,8 @@ According to the scroll view offset do something, like change navigation bar alp
   s.homepage         = 'https://github.com/HaoXianSen/HYHScrollOffsetManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = 'Harry' 
-  s.source           = { :git => 'https://github.com/HaoXianSen/HYHScrollOffsetManager', :tag => s.version.to_s}
+  s.author           = 'Harry'
+  s.source           = { :git => 'https://github.com/HaoXianSen/HYHScrollOffsetManager.git', :tag => s.version.to_s}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
