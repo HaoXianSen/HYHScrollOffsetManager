@@ -1,0 +1,31 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - HYHScrollOffsetManager (0.1.0)
+  - Kiwi (3.0.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - HYHScrollOffsetManager (from `../`)
+  - Kiwi
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - Kiwi
+
+EXTERNAL SOURCES:
+  HYHScrollOffsetManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  HYHScrollOffsetManager: 6fe2ccb4006291fb1d14208c1e8ef4f107d16cd4
+  Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
+
+PODFILE CHECKSUM: 1dc1b934f80b56db20dc75ca3563be5997d2cdf7
+
+COCOAPODS: 1.8.3

@@ -1,0 +1,22 @@
+{
+  "name": "HYHScrollOffsetManager",
+  "version": "0.1.0",
+  "summary": "A short description of HYHScrollOffsetManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/1335430614@qq.com/HYHScrollOffsetManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1335430614@qq.com": "haoyuhong@dangdang.com"
+  },
+  "source": {
+    "git": "https://github.com/1335430614@qq.com/HYHScrollOffsetManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HYHScrollOffsetManager/Classes/**/*"
+}

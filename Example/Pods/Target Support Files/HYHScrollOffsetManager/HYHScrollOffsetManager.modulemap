@@ -1,0 +1,6 @@
+framework module HYHScrollOffsetManager {
+  umbrella header "HYHScrollOffsetManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
